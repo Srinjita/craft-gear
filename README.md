@@ -9,7 +9,7 @@ Parameterized gear
 
 **numTeeth:** To adjust the number of teeth of the gear
 
-**circularPitch:**To adjust radius of the gear
+**circularPitch:** To adjust radius of the gear
 
 **pressureAngle:** To adjust pressure angle of teeth of the gear that is the angle between the tooth face and gear wheel tangent.
 
