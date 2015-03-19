@@ -7,7 +7,7 @@
 <parameter name="centerholeradius" type="float" default="2"/>
 <script type="text/openjscad">
    
-// Main entry point; here we construct our solid: 
+// Main entry point where we construct our solid 
 function main(params)
 {
   var gear = involuteGear(
@@ -33,7 +33,9 @@ function involuteGear(numTeeth, circularPitch, pressureAngle, clearance, thickne
   if(arguments.length < 4) clearance = 0;
   if(arguments.length < 4) thickness = 1;
   
-  var addendum = circularPitch / Math.PI;
+  //addendum:radial distance between the pitch circle and the top land
+  var addendum = circularPitch / Math.PI; 
+  //dedendum:radial distance between the pitch circle and the bottom land/root circle
   var dedendum = addendum + clearance;
   
   // radii of the 4 circles:
